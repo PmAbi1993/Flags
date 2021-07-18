@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8400218526A3EE1F00090078 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400218426A3EE1F00090078 /* AppCoordinator.swift */; };
 		8484FE7526A3EA9F007FFCD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484FE7426A3EA9F007FFCD4 /* AppDelegate.swift */; };
 		8484FE7726A3EA9F007FFCD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484FE7626A3EA9F007FFCD4 /* SceneDelegate.swift */; };
 		8484FE7926A3EA9F007FFCD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484FE7826A3EA9F007FFCD4 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 		8484FE8426A3EAA0007FFCD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8484FE8226A3EAA0007FFCD4 /* LaunchScreen.storyboard */; };
 		8484FE8F26A3EAA1007FFCD4 /* FlagsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484FE8E26A3EAA1007FFCD4 /* FlagsTests.swift */; };
 		8484FE9A26A3EAA1007FFCD4 /* FlagsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484FE9926A3EAA1007FFCD4 /* FlagsUITests.swift */; };
+		8484FEAC26A3EB36007FFCD4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484FEAB26A3EB36007FFCD4 /* Coordinator.swift */; };
+		8484FEB526A3EC6E007FFCD4 /* StoryBoarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484FEB426A3EC6E007FFCD4 /* StoryBoarded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8400218426A3EE1F00090078 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		8484FE7126A3EA9F007FFCD4 /* Flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8484FE7426A3EA9F007FFCD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8484FE7626A3EA9F007FFCD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		8484FE9526A3EAA1007FFCD4 /* FlagsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlagsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8484FE9926A3EAA1007FFCD4 /* FlagsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsUITests.swift; sourceTree = "<group>"; };
 		8484FE9B26A3EAA1007FFCD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8484FEAB26A3EB36007FFCD4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8484FEB426A3EC6E007FFCD4 /* StoryBoarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoarded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 		8484FE7326A3EA9F007FFCD4 /* Flags */ = {
 			isa = PBXGroup;
 			children = (
+				8484FEBF26A3ED68007FFCD4 /* Coredata */,
+				8484FEBA26A3ED31007FFCD4 /* Helper */,
+				8484FEB926A3ED03007FFCD4 /* Extensions */,
 				8484FE7426A3EA9F007FFCD4 /* AppDelegate.swift */,
 				8484FE7626A3EA9F007FFCD4 /* SceneDelegate.swift */,
 				8484FE7826A3EA9F007FFCD4 /* ViewController.swift */,
@@ -108,7 +117,6 @@
 				8484FE8026A3EAA0007FFCD4 /* Assets.xcassets */,
 				8484FE8226A3EAA0007FFCD4 /* LaunchScreen.storyboard */,
 				8484FE8526A3EAA0007FFCD4 /* Info.plist */,
-				8484FE7D26A3EA9F007FFCD4 /* Flags.xcdatamodeld */,
 			);
 			path = Flags;
 			sourceTree = "<group>";
@@ -131,6 +139,47 @@
 			path = FlagsUITests;
 			sourceTree = "<group>";
 		};
+		8484FEAA26A3EAF6007FFCD4 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8484FEAB26A3EB36007FFCD4 /* Coordinator.swift */,
+				8400218426A3EE1F00090078 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8484FEB926A3ED03007FFCD4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8484FEBA26A3ED31007FFCD4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8484FEAA26A3EAF6007FFCD4 /* Coordinators */,
+				8484FEBB26A3ED44007FFCD4 /* StoryBoard */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8484FEBB26A3ED44007FFCD4 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				8484FEB426A3EC6E007FFCD4 /* StoryBoarded.swift */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		8484FEBF26A3ED68007FFCD4 /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				8484FE7D26A3EA9F007FFCD4 /* Flags.xcdatamodeld */,
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,6 +190,7 @@
 				8484FE6D26A3EA9F007FFCD4 /* Sources */,
 				8484FE6E26A3EA9F007FFCD4 /* Frameworks */,
 				8484FE6F26A3EA9F007FFCD4 /* Resources */,
+				8484FEB026A3EB7D007FFCD4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -256,6 +306,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8484FEB026A3EB7D007FFCD4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8484FE6D26A3EA9F007FFCD4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -263,8 +333,11 @@
 			files = (
 				8484FE7926A3EA9F007FFCD4 /* ViewController.swift in Sources */,
 				8484FE7526A3EA9F007FFCD4 /* AppDelegate.swift in Sources */,
+				8484FEAC26A3EB36007FFCD4 /* Coordinator.swift in Sources */,
+				8484FEB526A3EC6E007FFCD4 /* StoryBoarded.swift in Sources */,
 				8484FE7726A3EA9F007FFCD4 /* SceneDelegate.swift in Sources */,
 				8484FE7F26A3EA9F007FFCD4 /* Flags.xcdatamodeld in Sources */,
+				8400218526A3EE1F00090078 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

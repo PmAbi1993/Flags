@@ -11,6 +11,5 @@ class ViewController: UIViewController, StoryBoardInitiable {
     static var storyBoardName: EXStorBoardName { .default }
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
     }
 }

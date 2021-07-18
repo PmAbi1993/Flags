@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8400218526A3EE1F00090078 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400218426A3EE1F00090078 /* AppCoordinator.swift */; };
+		8400218D26A3F1AC00090078 /* CoreDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400218C26A3F1AC00090078 /* CoreDb.swift */; };
 		8484FE7526A3EA9F007FFCD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484FE7426A3EA9F007FFCD4 /* AppDelegate.swift */; };
 		8484FE7726A3EA9F007FFCD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484FE7626A3EA9F007FFCD4 /* SceneDelegate.swift */; };
 		8484FE7926A3EA9F007FFCD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484FE7826A3EA9F007FFCD4 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		8400218426A3EE1F00090078 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8400218C26A3F1AC00090078 /* CoreDb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDb.swift; sourceTree = "<group>"; };
 		8484FE7126A3EA9F007FFCD4 /* Flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8484FE7426A3EA9F007FFCD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8484FE7626A3EA9F007FFCD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				8484FE7D26A3EA9F007FFCD4 /* Flags.xcdatamodeld */,
+				8400218C26A3F1AC00090078 /* CoreDb.swift */,
 			);
 			path = Coredata;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				8484FEB526A3EC6E007FFCD4 /* StoryBoarded.swift in Sources */,
 				8484FE7726A3EA9F007FFCD4 /* SceneDelegate.swift in Sources */,
 				8484FE7F26A3EA9F007FFCD4 /* Flags.xcdatamodeld in Sources */,
+				8400218D26A3F1AC00090078 /* CoreDb.swift in Sources */,
 				8400218526A3EE1F00090078 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

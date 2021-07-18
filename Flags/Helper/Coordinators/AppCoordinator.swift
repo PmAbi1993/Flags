@@ -16,6 +16,7 @@ class AppCoordinator: Coordinator {
     }
     func start() {
         let controller: ViewController = ViewController.instance()
+        navigationController.navigationBar.prefersLargeTitles = true
         self.navigationController.pushViewController(controller, animated: true)
     }
 }

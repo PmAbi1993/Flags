@@ -28,6 +28,12 @@
 		84236EB726A413CB005C17D8 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84236EB626A413CB005C17D8 /* PopUp.swift */; };
 		84236EBC26A41413005C17D8 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84236EBB26A41413005C17D8 /* UIColor.swift */; };
 		84236EC726A418EC005C17D8 /* Tableview + Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84236EC626A418EC005C17D8 /* Tableview + Configs.swift */; };
+		84236ECE26A41AB0005C17D8 /* CountryListingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84236ECD26A41AB0005C17D8 /* CountryListingVC.swift */; };
+		84236EDA26A41AE5005C17D8 /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84236ED926A41AE5005C17D8 /* CountryListViewModel.swift */; };
+		84236EE026A41B28005C17D8 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84236EDF26A41B28005C17D8 /* Country.swift */; };
+		84713AC326A6A43200EF32EA /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84713AC226A6A43200EF32EA /* HomePageVC.swift */; };
+		84713ACD26A6A50900EF32EA /* FlagsApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84713ACC26A6A50900EF32EA /* FlagsApiModel.swift */; };
+		84713AD526A6A59400EF32EA /* FlagsApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84713AD426A6A59400EF32EA /* FlagsApiService.swift */; };
 		8484FE7526A3EA9F007FFCD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484FE7426A3EA9F007FFCD4 /* AppDelegate.swift */; };
 		8484FE7726A3EA9F007FFCD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484FE7626A3EA9F007FFCD4 /* SceneDelegate.swift */; };
 		8484FE7926A3EA9F007FFCD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484FE7826A3EA9F007FFCD4 /* ViewController.swift */; };
@@ -80,6 +86,12 @@
 		84236EB626A413CB005C17D8 /* PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
 		84236EBB26A41413005C17D8 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		84236EC626A418EC005C17D8 /* Tableview + Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tableview + Configs.swift"; sourceTree = "<group>"; };
+		84236ECD26A41AB0005C17D8 /* CountryListingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListingVC.swift; sourceTree = "<group>"; };
+		84236ED926A41AE5005C17D8 /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
+		84236EDF26A41B28005C17D8 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		84713AC226A6A43200EF32EA /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
+		84713ACC26A6A50900EF32EA /* FlagsApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsApiModel.swift; sourceTree = "<group>"; };
+		84713AD426A6A59400EF32EA /* FlagsApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsApiService.swift; sourceTree = "<group>"; };
 		8484FE7126A3EA9F007FFCD4 /* Flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8484FE7426A3EA9F007FFCD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8484FE7626A3EA9F007FFCD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -258,6 +270,92 @@
 			path = BluePrint;
 			sourceTree = "<group>";
 		};
+		84236ECB26A41A7A005C17D8 /* Application Modules */ = {
+			isa = PBXGroup;
+			children = (
+				84713AC126A6A41400EF32EA /* HomePage */,
+				84236ECC26A41A90005C17D8 /* Country Listing */,
+			);
+			path = "Application Modules";
+			sourceTree = "<group>";
+		};
+		84236ECC26A41A90005C17D8 /* Country Listing */ = {
+			isa = PBXGroup;
+			children = (
+				84713ACB26A6A4F800EF32EA /* Service */,
+				84236EDE26A41B1C005C17D8 /* Models */,
+				84236ED826A41AD3005C17D8 /* ViewModels */,
+				84236ED626A41ABF005C17D8 /* Controllers */,
+				84236ED526A41AB8005C17D8 /* Views */,
+			);
+			path = "Country Listing";
+			sourceTree = "<group>";
+		};
+		84236ED526A41AB8005C17D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84236ED726A41ACA005C17D8 /* Tablecells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84236ED626A41ABF005C17D8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84236ECD26A41AB0005C17D8 /* CountryListingVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84236ED726A41ACA005C17D8 /* Tablecells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tablecells;
+			sourceTree = "<group>";
+		};
+		84236ED826A41AD3005C17D8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				84236ED926A41AE5005C17D8 /* CountryListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		84236EDE26A41B1C005C17D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84713ACC26A6A50900EF32EA /* FlagsApiModel.swift */,
+				84236EDF26A41B28005C17D8 /* Country.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84713AC126A6A41400EF32EA /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				84713AC226A6A43200EF32EA /* HomePageVC.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		84713ACA26A6A4A700EF32EA /* Application Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				8484FE7426A3EA9F007FFCD4 /* AppDelegate.swift */,
+				8484FE7626A3EA9F007FFCD4 /* SceneDelegate.swift */,
+			);
+			path = "Application Delegates";
+			sourceTree = "<group>";
+		};
+		84713ACB26A6A4F800EF32EA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				84713AD426A6A59400EF32EA /* FlagsApiService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		8484FE6826A3EA9F007FFCD4 = {
 			isa = PBXGroup;
 			children = (
@@ -281,13 +379,13 @@
 		8484FE7326A3EA9F007FFCD4 /* Flags */ = {
 			isa = PBXGroup;
 			children = (
+				84713ACA26A6A4A700EF32EA /* Application Delegates */,
+				84236ECB26A41A7A005C17D8 /* Application Modules */,
 				84236EA526A41175005C17D8 /* CommonViews */,
 				84236E7B26A401A7005C17D8 /* Network */,
 				8484FEBF26A3ED68007FFCD4 /* Coredata */,
 				8484FEBA26A3ED31007FFCD4 /* Helper */,
 				8484FEB926A3ED03007FFCD4 /* Extensions */,
-				8484FE7426A3EA9F007FFCD4 /* AppDelegate.swift */,
-				8484FE7626A3EA9F007FFCD4 /* SceneDelegate.swift */,
 				8484FE7826A3EA9F007FFCD4 /* ViewController.swift */,
 				8484FE7A26A3EA9F007FFCD4 /* Main.storyboard */,
 				8484FE8026A3EAA0007FFCD4 /* Assets.xcassets */,
@@ -519,13 +617,17 @@
 				84236E9626A401A7005C17D8 /* NetworkRequestProvider.swift in Sources */,
 				84236EB126A412BB005C17D8 /* EXManagedObjectBluePrint.swift in Sources */,
 				84236E9926A401A7005C17D8 /* RequestProvider.swift in Sources */,
+				84713ACD26A6A50900EF32EA /* FlagsApiModel.swift in Sources */,
+				84236EDA26A41AE5005C17D8 /* CountryListViewModel.swift in Sources */,
 				84236E9C26A401A7005C17D8 /* Request.swift in Sources */,
 				84236EBC26A41413005C17D8 /* UIColor.swift in Sources */,
 				84236EA726A41193005C17D8 /* SkeletonView.swift in Sources */,
 				84236EB226A412BB005C17D8 /* EXManagedBluePrint + CRUD.swift in Sources */,
+				84236ECE26A41AB0005C17D8 /* CountryListingVC.swift in Sources */,
 				84236EB026A412BB005C17D8 /* EXManagedObject.swift in Sources */,
 				84236E9B26A401A7005C17D8 /* RequestEndpoint.swift in Sources */,
 				8484FE7726A3EA9F007FFCD4 /* SceneDelegate.swift in Sources */,
+				84713AD526A6A59400EF32EA /* FlagsApiService.swift in Sources */,
 				84236E9A26A401A7005C17D8 /* HTTPHeaders.swift in Sources */,
 				84236E9D26A401A7005C17D8 /* NetworkErrors.swift in Sources */,
 				84236EB726A413CB005C17D8 /* PopUp.swift in Sources */,
@@ -533,10 +635,12 @@
 				84236E9426A401A7005C17D8 /* RequestBase.swift in Sources */,
 				84236EC726A418EC005C17D8 /* Tableview + Configs.swift in Sources */,
 				84236E9826A401A7005C17D8 /* RequestProviderConfigurations.swift in Sources */,
+				84713AC326A6A43200EF32EA /* HomePageVC.swift in Sources */,
 				84236E9726A401A7005C17D8 /* RequestBody.swift in Sources */,
 				8484FE7F26A3EA9F007FFCD4 /* Flags.xcdatamodeld in Sources */,
 				8400218D26A3F1AC00090078 /* CoreDb.swift in Sources */,
 				8400218526A3EE1F00090078 /* AppCoordinator.swift in Sources */,
+				84236EE026A41B28005C17D8 /* Country.swift in Sources */,
 				84236E9E26A401A7005C17D8 /* NetworkRequestProviderLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
